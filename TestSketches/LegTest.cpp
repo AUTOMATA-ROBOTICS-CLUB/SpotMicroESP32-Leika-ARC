@@ -34,14 +34,12 @@ void sweep(float current_angle,float target_angle,int servoNum) {
 	int target_pwm = angle_to_pwm(target_angle);
 
 	for(int i = current_pwm; i <= target_pwm; i++) {
-		std::cout << i << "\n";
-    pwm.setPWM(servoNum,0,i);
+    	pwm.setPWM(servoNum,0,i);
 	}
 
 	// Sweep back 
 	for(int i = target_pwm; i >= current_pwm; i--) {
-		std::cout << i << "\n";
-    pwm.setPWM(servoNum,0,i);
+    	pwm.setPWM(servoNum,0,i);
 	}
 }
 
