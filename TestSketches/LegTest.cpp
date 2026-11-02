@@ -1,10 +1,7 @@
 #include <cstdint>
-#include <WiFi.h>
-#include <WiFiUdp.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <cstdlib>
-#include <Adafruit_SSD1306.h>
 #include <Adafruit_PWMServoDriver.h>
 
 #define I2C_SDA 8  
